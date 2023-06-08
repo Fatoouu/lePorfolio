@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"
+        integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title> Portfolio Fatoumata </title>
+</head>
+
+<body>
+
+    <!-- Menu hamburger -->
+    <nav class="my-navbar">
+        <a href="index.html" class="logo">Présidente</a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="index.html"> Accueil </a></li>
+                <li><a href="presentation.html"> Présentation </a></li>
+                <li><a href="portfolio.html"> Portfolio </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+        </div>
+        <img src="image/menu.png" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+
+    <!-- Bannière haut de page -->
+    <div class="banniere fluid">
+        <img src="image/fond.png" alt="banniere" class="banniere-image">
+        <div class="my-container">
+            <div class="gauche">
+                <img src="image/ordi.png" alt="image">
+            </div>
+            <div class="droite">
+                <h2 class="banniere-hauttitre1"> Bienvenue sur mon portfolio ! </h2>
+                <h1 class="banniere-titre"> Fatoumata <br> Sacko </h1>
+                <h3 class="banniere-hauttitre2"> Developpeuse intégatrice web et mobile </h3>
+            </div>
+
+        </div>
+    </div>
+
+    <div class=" button-background">
+        <div class="bouton-navigation my-container my-row">
+            <div>
+                <button>
+                    <a href="presentation.html" class="button">Présentation</a>
+                </button> 
+            </div>
+            
+            <div>
+                <button>
+                    <a href="portfolio.html" class="button">Portfolio</a>
+                </button> 
+            </div>
+            
+            <div>
+                <button>
+                    <a href="contact.html" class="button">Contact</a>
+                </button> 
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <ul class="piedpage">
+            <li><a href="#">Entretien personnalisé</a></li>
+            <li><a href="#">CGV</a></li>
+            <li><a href="#">Engagement et confidentialité </a></li>
+        </ul>
+    </footer>
+
+</body>
+<script>        
+    const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.bundle.min.js"
+    integrity="sha512-1TK4hjCY5+E9H3r5+05bEGbKGyK506WaDPfPe1s/ihwRjr6OtL43zJLzOFQ+/zciONEd+sp7LwrfOCnyukPSsg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</html>

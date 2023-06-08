@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.my-container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.my-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Barre de navigation */
+
+
+body {
+    background-image: url("../image/fond.png");
+}
+
+
+.navigation {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+nav {
+    background-color: #0000004a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+nav ul li a:hover {
+    color: #603560;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Menu hamburger */
+.my-navbar {
+    position: absolute;
+    padding: .8em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    z-index: 9000;
+    top: 0;
+    position: fixed;
+    background-color: #1b1b234f;
+}
+.my-navbar a {
+    color: white;
+    text-decoration: none;
+}
+.titre-navbar {
+    font-size: 1.9em;
+}
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: .2em;
+}
+.my-navbar .nav-links ul {
+    display: flex;
+}
+.my-navbar .nav-links ul li{
+    margin: 0 25px;
+    font-size: 1.4em;
+}
+.my-navbar .nav-links ul li.active a{
+    color: #8B5580;
+    font-weight: 600;
+}
+.my-navbar .menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 45px;
+}
+
+.my-navbar {
+    padding: 0;
+}
+.my-navbar .logo {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+.my-navbar .menu-hamburger {
+    display: block;
+}
+.my-navbar .nav-links {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.105);
+    backdrop-filter: blur(50px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+}
+.my-navbar .mobile-menu {
+    margin-left: 0;
+}
+body .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.my-navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+}
+
+/*  Bannière haut de page */
+
+.banniere {
+    position: relative;
+}
+.banniere-image {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+    width: 100%;
+}
+
+.droite {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.droite h1 {
+    font-family: 'Anton';
+    text-transform: uppercase;
+    font-size: 1.6em;
+}
+
+h2, h3, p {
+    font-family: 'Roboto';
+}
+
+.gauche {
+    position: absolute;
+    top: 23%;
+    left: 0%;
+    font-size: 3em;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+}
+
+.gauche img{
+    width: 20em;
+}
+
+/* Bouton de navigation */
+.button-background {
+    background-color: #1E1B64;
+}
+
+.button {
+    text-decoration: none;
+    background-color:  #793C6C;
+    padding: 7px 20px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+/* Mes projets - Porfolio */
+
+
+.my-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.portfolio .projet{
+    background-color: #23232E;
+    border-radius: 25px;
+    /* padding: 4em 0 6em 0; */
+    margin-bottom: 4em;
+    
+}
+
+.portfolio {
+    margin-top: 4em;
+    position: relative;
+}
+
+.portfolio .mes-projets{
+    display: flex;
+    gap: 4em;
+}
+
+.portfolio .gauche-portfolio img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio .droite-portfolio img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio .droite-portfolio h3 {
+    color: white;
+    text-align: center;
+    padding-top: .5em;
+    margin: .5em;
+}
+
+.portfolio .gauche-portfolio h3 {
+    color: white;
+    text-align: center;
+    padding-top: .5em;
+    margin: .5em;
+}
+
+.portfolio .gauche-portfolio .projet p {
+    color: white;
+    text-align: center;
+    padding: .5em 0 1em 0;
+    font-size: 1em;
+}
+
+.portfolio .droite-portfolio .projet p {
+    color: white;
+    text-align: center;
+    padding: .5em 0 1em 0;
+    font-size: 1em;
+}
+
+
+.portfolio .titre-portfolio {
+    margin-top: 4em;
+}
+
+
+/* Page de contact */
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+}
+  
+input[type=text], textarea, input[type=email] {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+margin-right: 0px;
+margin-left: 0px;
+resize: vertical;
+}
+label{margin-right: 0px;
+margin-left: 0px;
+width: 100%;}
+
+input[type=submit] {
+background-color:#181760;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: #96758f;
+}
+
+.container {
+    box-sizing : border-box;
+    border-radius:5px;
+    background-color:#f2f2f2;
+    padding:20px;
+    padding-top: 5px;
+    width: 100%;
+    max-width: 440px;
+    margin:0 auto;
+}
+.titre-formulaire{
+    color:#181760;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+/* Page de présentation */
+
+h1 {
+    color: white;
+    margin-top: 2em;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+p {
+    color: white;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.first-li {
+    margin-top: 2em;
+}
+
+li{
+    list-style: none;
+    color: white;
+}
+
+
+.titrecv{
+    font-size: 1em;
+    font-style: italic;
+    color: rgb(75, 85, 226);
+    margin-bottom: 2em;
+}
+
+.moncv {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.moncv img {
+    width: 100%;
+}
+
+.border {
+    border: 1px solid red;
+}
+/* Pied de page */
+
+footer {
+    background-color: #181760;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.piedpage{
+    text-decoration: none;
+    margin-left: 2em;
+}
+
+.piedpage li {
+    list-style: none;
+}
+
+.piedpage a {
+    text-decoration: none;
+    color: white;
+}
+
+.piedpage a:hover {
+    text-decoration: none;
+    color: #96758f;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+@media (max-width: 1500px) { 
+
+
+    .droite h2{
+        font-size: .7em;
+    }
+    .droite h1{
+        font-size: 1.8em;
+    }
+    .portfolio .my-row{
+        flex-direction: column;
+        display: block;
+    }
+}
+
+@media (max-width: 1200px) { 
+    
+    .gauche img {
+        margin-top: 1em;
+        width: 50%;
+        height: auto;
+    }
+
+    .banniere .droite h2{
+        font-size: .5em;
+    }
+    .droite h1{
+        font-size: 1.5em;
+    }
+    .droite h3{
+        font-size: .3em;
+    }
+
+    .button-background button a {
+        font-size: 1.7em;
+    }
+
+    button {
+        padding: 2em;  
+    }
+
+
+    footer a{
+        font-size: .85em;
+    }
+}
+
+@media (max-width: 700px) { 
+    
+    .my-navbar .logo {
+        font-size: 1em;
+    }
+
+    .my-navbar .menu-hamburger {
+        width: 5%;
+    }
+
+    .gauche img {
+        margin-top: 1em;
+        width: 40%;
+        height: auto;
+    }
+
+    .banniere .droite h2{
+        margin-top: 1em;
+        font-size: .3em;
+    }
+
+    .droite h1{
+        font-size: .7em;
+    }
+    .droite h3{
+        font-size: .2em;
+    }
+
+    .button-background button a {
+        font-size: .8em;
+    }
+
+    button {
+        padding: 1em;  
+    }
+
+    .piedpage  {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    footer a{
+        font-size: .7em;
+    }
+}
